@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Cup</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula o arquivo CSS -->
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/a4efa9ec-7cdb-464d-8182-c354344eef2a/dbpjpqu-76f7e125-e8cb-47aa-b48c-92f0a335dd95.png/v1/fit/w_512,h_512,q_70,strp/counter_strike_1_6_hq_icon_by_fabritor100_dbpjpqu-375w-2x.jpg" alt="Logo 2025 Cup">
+        </a>
+        <nav>
+            <a href="regras.html">Regras</a> <!-- Link para Regras -->
+            <a href="duvidas.html">Dúvidas</a> <!-- Link para Dúvidas -->
+            <a href="https://wa.me/5581997977133?text=Olá!%20Gostaria%20de%20me%20inscrever%20no%20campeonato%202025%20Cup." target="_blank">Contato</a> <!-- WhatsApp -->
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Bem-vindo ao 2025 Cup!</h1>
+        <p>O maior campeonato de Counter-Strike 1.6, feito para os apaixonados por e-sports.</p>
+        <a href="https://wa.me/5581997977133?text=Olá!%20Gostaria%20de%20me%20inscrever%20no%20campeonato%202025%20Cup." class="btn" target="_blank">Inscreva-se agora</a>
+    </div>
+
+    <!-- Título acima das imagens -->
+    <div class="section-title">
+        <h2>Informações Importantes</h2>
+    </div>
+
+    <!-- Imagens com links -->
+    <div class="images">
+        <a href="tabela.html" class="image">
+            <img src="imagem1.jpg" alt="Tabela">
+            <div class="image-text">TABELA</div> <!-- Cor amarela já aplicada aqui -->
+        </a>
+        <a href="times_inscritos.html" class="image">
+            <img src="imagem2.jpg" alt="Times Inscritos">
+            <div class="image-text">TIMES INSCRITOS</div> <!-- Cor amarela já aplicada aqui -->
+        </a>
+    </div>
+
+    <!-- Seção de Transmissão ao Vivo -->
+    <div class="stream-section">
+        <h2>Assista à Transmissão Oficial</h2>
+        <p>Não perca nenhum momento do 2025 Cup! Assista à nossa transmissão oficial ao vivo no Twitch.</p>
+        <!-- Placeholder do player Twitch -->
+        <div id="twitch-embed"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cup</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Vincula o arquivo JavaScript -->
+
+    <!-- Carregar o Player do Twitch -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+    <!-- Script para embutir o player da Twitch -->
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            channel: "serginho_tt",
+            width: "620",
+            height: "378"
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2025 Cup</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula o arquivo CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header a img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 50px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .tables {
+            margin: 30px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #444;
+            position: relative;
+        }
+
+        table th {
+            background-color: #1e1e1e;
+        }
+
+        .table-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para as dicas (tooltips) */
+        .tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            visibility: hidden;
+            font-size: 0.9em;
+            z-index: 10;
+        }
+
+        td:hover .tooltip {
+            visibility: visible;
+        }
+
+        .match-info {
+            margin-top: 50px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: left;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        /* Ícone flutuante da Twitch */
+        .twitch-float {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #6441a5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .twitch-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/a4efa9ec-7cdb-464d-8182-c354344eef2a/dbpjpqu-76f7e125-e8cb-47aa-b48c-92f0a335dd95.png/v1/fit/w_512,h_512,q_70,strp/counter_strike_1_6_hq_icon_by_fabritor100_dbpjpqu-375w-2x.jpg" alt="Logo 2025 Cup">
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="regras.html">Regras</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="https://wa.me/5581997977133?text=Olá!%20Gostaria%20de%20me%20inscrever%20no%20campeonato%202025%20Cup." target="_blank">Contato</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Tabela 2025 Cup</h1>
+        <p>Acompanhe os grupos e os times em competição!</p>
+    </div>
+
+    <div class="tables">
+        <!-- Grupo A -->
+        <div>
+            <h2 class="table-title">Grupo A</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th><span>V</span><div class="tooltip">Vitórias</div></th>
+                        <th><span>D</span><div class="tooltip">Derrotas</div></th>
+                        <th><span>R</span><div class="tooltip">Saldo de Rounds</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Time Alpha</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>+10</td>
+                    </tr>
+                    <tr>
+                        <td>Time Beta</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>+15</td>
+                    </tr>
+                    <tr>
+                        <td>Time Gamma</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>-5</td>
+                    </tr>
+                    <tr>
+                        <td>Time Delta</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>-20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Grupo B -->
+        <div>
+            <h2 class="table-title">Grupo B</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th><span>V</span><div class="tooltip">Vitórias</div></th>
+                        <th><span>D</span><div class="tooltip">Derrotas</div></th>
+                        <th><span>R</span><div class="tooltip">Saldo de Rounds</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Time Epsilon</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>+8</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zeta</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>+12</td>
+                    </tr>
+                    <tr>
+                        <td>Time Eta</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>-3</td>
+                    </tr>
+                    <tr>
+                        <td>Time Theta</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>-17</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Espaço para informações das partidas -->
+    <div class="match-info">
+        <h3>Informações das Partidas</h3>
+        <p><strong>Time Alpha</strong> x <strong>Time Beta</strong> - Placar: 16-12 - Mapa: Dust2 - Horário: 14:00</p>
+        <p><strong>Time Gamma</strong> x <strong>Time Delta</strong> - Placar: 10-16 - Mapa: Mirage - Horário: 16:00</p>
+        <p><strong>Time Epsilon</strong> x <strong>Time Zeta</strong> - Placar: 14-16 - Mapa: Inferno - Horário: 18:00</p>
+    </div>
+
+    <!-- Ícone flutuante da Twitch -->
+    <div class="twitch-float" onclick="window.open('https://www.twitch.tv/serginho_tt', '_blank')">
+        <img src="imagens/twitch.png" alt="Twitch" width="40" height="40">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cup</p>
+    </footer>
+</body>
+</html>

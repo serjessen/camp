@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times Inscritos - 2025 Cup</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header a img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 50px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .table-container {
+            margin: 30px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+
+        table th {
+            background-color: #1e1e1e;
+        }
+
+        .table-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            margin-bottom: 50px; /* Adicionando um espaçamento para o botão acima do footer */
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Ícone flutuante da Twitch */
+        .twitch-float {
+            position: fixed;
+            bottom: 80px;  /* Ajuste para ficar acima do footer */
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #6441a5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .twitch-float:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/a4efa9ec-7cdb-464d-8182-c354344eef2a/dbpjpqu-76f7e125-e8cb-47aa-b48c-92f0a335dd95.png/v1/fit/w_512,h_512,q_70,strp/counter_strike_1_6_hq_icon_by_fabritor100_dbpjpqu-375w-2x.jpg" alt="Logo 2025 Cup">
+        </a>
+        <nav>
+            <a href="regras.html">Regras</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="https://wa.me/5581997977133?text=Olá!%20Gostaria%20de%20me%20inscrever%20no%20campeonato%202025%20Cup." target="_blank">Contato</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Times Inscritos - 2025 Cup</h1>
+        <p>Abaixo estão os times inscritos no campeonato. Acompanhe as atualizações!</p>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Nome do Time</th>
+                    <th>Jogadores</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Time Alpha</td>
+                    <td>Jogador 1, Jogador 2, Jogador 3, Jogador 4, Jogador 5, Jogador 6, Jogador 7</td>
+                    <td>Inscrito</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Time Beta</td>
+                    <td>Jogador 1, Jogador 2, Jogador 3, Jogador 4, Jogador 5, Jogador 6, Jogador 7</td>
+                    <td>Inscrito</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Time Gamma</td>
+                    <td>Jogador 1, Jogador 2, Jogador 3, Jogador 4, Jogador 5, Jogador 6, Jogador 7</td>
+                    <td>Inscrito</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Time Delta</td>
+                    <td>Jogador 1, Jogador 2, Jogador 3, Jogador 4, Jogador 5, Jogador 6, Jogador 7</td>
+                    <td>Inscrito</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Ícone flutuante da Twitch -->
+    <div class="twitch-float" onclick="window.open('https://www.twitch.tv/serginho_tt', '_blank')">
+        <img src="imagens/twitch.png" alt="Twitch" width="40" height="40">
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Cup</p>
+    </footer>
+
+    <script>
+        // Você pode adicionar scripts adicionais aqui se precisar
+    </script>
+</body>
+</html>

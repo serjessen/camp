@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras - 2025 Cup</title>
+    <link rel="stylesheet" href="regras.css"> <!-- Vincula o arquivo CSS -->
+    <style>
+        /* Estilos para manter consistência com a página index.html */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header a img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 50px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            margin: 30px 20px;
+            text-align: left;
+        }
+
+        .rule-item {
+            margin-bottom: 20px;
+        }
+
+        .rule-item h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .rule-item p {
+            font-size: 1.2em;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        /* Ícone flutuante da Twitch */
+        .twitch-float {
+            position: fixed;
+            bottom: 80px;  /* Ajuste para ficar acima do footer */
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #6441a5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .twitch-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/a4efa9ec-7cdb-464d-8182-c354344eef2a/dbpjpqu-76f7e125-e8cb-47aa-b48c-92f0a335dd95.png/v1/fit/w_512,h_512,q_70,strp/counter_strike_1_6_hq_icon_by_fabritor100_dbpjpqu-375w-2x.jpg" alt="Logo 2025 Cup">
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="regras.html">Regras</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="https://wa.me/5581997977133?text=Olá!%20Gostaria%20de%20me%20inscrever%20no%20campeonato%202025%20Cup." target="_blank">Contato</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Regras do Campeonato</h1>
+        <p>Confira todas as regras para participar do 2025 Cup e garantir que o torneio seja justo e competitivo!</p>
+    </div>
+
+    <div class="content">
+        <section class="rule-item">
+            <h2>1. Formato do Campeonato</h2>
+            <p>O campeonato será dividido em duas fases: a fase de grupos e a fase de mata-mata. Na fase de grupos, todos os times se enfrentam em MD1 (Melhor de 1). Os dois melhores times de cada grupo avançam para a fase de mata-mata, onde os jogos serão disputados em MD3 (Melhor de 3).</p>
+        </section>
+
+        <section class="rule-item">
+            <h2>2. Equipamentos Permitidos</h2>
+            <p>Cada jogador deve utilizar um computador pessoal, com no mínimo as especificações necessárias para rodar o Counter-Strike 1.6 de forma estável. O uso de periféricos como mouses, teclados e fones de ouvido é permitido, mas deve ser informado à organização caso algum jogador utilize periféricos especiais (ex: mouses com botões programáveis).</p>
+        </section>
+
+        <section class="rule-item">
+            <h2>3. Inscrição</h2>
+            <p>A inscrição custa 50 reais por equipe, com até 7 jogadores por time. A equipe pode ter um jogador substituto, que deverá ser informado à organização antes do início do campeonato.</p>
+        </section>
+
+        <section class="rule-item">
+            <h2>4. Pontuação e Classificação</h2>
+            <p>Na fase de grupos, as equipes que vencerem uma partida ganham 3 pontos. Caso a partida termine em empate, cada equipe ganhará 1 ponto. A classificação será determinada pelos pontos conquistados, e em caso de empate entre duas equipes, o critério de desempate será o número de rounds vencidos nas partidas disputadas.</p>
+        </section>
+
+        <section class="rule-item">
+            <h2>5. Configurações do Servidor</h2>
+            <p>O servidor do jogo será configurado conforme as regras padrões do Counter-Strike 1.6, com as seguintes configurações:
+                <ul>
+                    <li>Modo de jogo: Competitive</li>
+                    <li>Round time: 1:45 minutos</li>
+                    <li>Limite de tempo para cada mapa: 30 minutos</li>
+                    <li>Modo de compra: 1st Round</li>
+                    <li>Equipamentos: Padrão (sem armas customizadas)</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="rule-item">
+            <h2>6. Comportamento dos Jogadores</h2>
+            <p>O comportamento de todos os jogadores deve ser exemplar. Qualquer atitude antidesportiva, como uso de cheats, xingamentos ou ameaças, poderá resultar em desqualificação da equipe. Os jogadores devem seguir todas as instruções dos organizadores e árbitros do campeonato.</p>
+        </section>
+
+        <section class="rule-item">
+            <h2>7. Substituição de Jogadores</h2>
+            <p>Em caso de substituição de jogadores durante o campeonato, a equipe deve notificar a organização com antecedência. O jogador substituto não pode ter completado ou estar inscrito para outro time no campeonato.</p>
+        </section>
+
+        <section class="rule-item">
+            <h2>8. Transmissão ao Vivo</h2>
+            <p>Todas as partidas serão transmitidas ao vivo pelo <a href="https://www.twitch.tv" target="_blank">Twitch</a>, com um delay de 90 segundos. A transmissão será feita com o intuito de proporcionar uma melhor experiência para os espectadores e garantir a transparência do campeonato.</p>
+        </section>
+
+        <section class="rule-item">
+            <h2>9. Disputa de Mapas</h2>
+            <p>Os mapas a serem disputados serão escolhidos por sorteio, e cada equipe terá direito a veto de 2 mapas antes do sorteio. Em caso de empate, o mapa será escolhido por sorteio entre os mapas restantes.</p>
+        </section>
+
+        <section class="rule-item">
+            <h2>10. Regras de Conexão</h2>
+            <p>Em caso de desconexão de um jogador durante o jogo, o round será pausado por no máximo 10 minutos para que o jogador se reconecte. Caso o jogador não consiga se reconectar a tempo, a equipe perderá o round atual e terá que seguir com um jogador a menos.</p>
+        </section>
+    </div>
+
+    <!-- Ícone flutuante da Twitch -->
+    <div class="twitch-float" onclick="window.open('https://www.twitch.tv/serginho_tt', '_blank')">
+        <img src="imagens/twitch.png" alt="Twitch" width="40" height="40">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cup</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Vincula o arquivo JavaScript -->
+</body>
+</html>

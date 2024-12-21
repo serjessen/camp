@@ -1,0 +1,251 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Verdana Bold, Arial, sans-serif;
+    background: linear-gradient(to right, rgb(2, 16, 45), rgb(44, 60, 96));
+    color: white;
+    text-align: center;
+    background-attachment: fixed; /* Efeito Parallax */
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header a img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+header a img:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    animation-delay: 0.5s;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation-delay: 1s;
+}
+
+/* Estilo para as imagens (1 e 2) */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.image {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilo para o texto nas imagens */
+.image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: yellow;  /* Alterando a cor para amarelo */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9); /* Sombra mais forte */
+}
+
+
+/* Seção de Transmissão ao Vivo */
+.stream-section {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.stream-section h2 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.stream-section p {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.stream-section iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+/* Estilo para o botão "Inscreva-se Agora" */
+.btn {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 50px;  /* Botão arredondado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;  /* Espaço superior entre o botão e o elemento acima */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);  /* Aumenta o botão ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra mais intensa */
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Efeito de foco */
+}
+
+/* Estilo para o título acima das imagens */
+.section-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Garantir que as imagens fiquem com o mesmo estilo e organizadas corretamente */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 20px;
+}
+
+.image {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: hsl(0, 0%, 98%);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9); /* Sombra mais forte */
+}
